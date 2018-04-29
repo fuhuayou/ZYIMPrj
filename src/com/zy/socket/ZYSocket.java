@@ -32,7 +32,7 @@ public class ZYSocket {
 	
 	public void sentMessage(String message)
 	{
-		
+		// sent message. File.
 		
 	}
 	
