@@ -15,7 +15,6 @@ public class ZYSocketMgr {
 
 	public ArrayList<ZYSocket> zySockets;
 	public ServerSocket serverSocket;
-	static Scanner scanner=new Scanner(System.in);
 	
 	public ZYSocketMgr(){
 		super();
@@ -76,6 +75,8 @@ public class ZYSocketMgr {
 									zySocket.cliectId = socketMessage;
 									zySocket.descriptionStr = "this is an validsocket.";
 									zySockets.add(zySocket);
+									zySocket.isHeartWorking = true;
+									zySocket.gotoRun();
 								} else {
 									socket.close();
 								}
